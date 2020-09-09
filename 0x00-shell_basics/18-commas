@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e   "$(ls -Flma)\n"
+echo -e   "$(ls -plma)\n"
