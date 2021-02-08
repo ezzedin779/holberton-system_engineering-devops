@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# basic verification on a file named holbertonschool
+HA=holbertonschool
+if [ -e $HA ] || [ -d $HA ]
+then
+	echo $HA file exists
+	if [ -s $HA ]
+	then
+		echo $HA file is not empty
+	else
+		echo $HA file is empty
+	fi
+	if [ -f $HA ]
+	then
+		echo $HA is a regular file
+	fi
+else
+	echo $HA does not exist
+fi
