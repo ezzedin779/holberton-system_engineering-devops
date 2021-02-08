@@ -15,5 +15,5 @@ then
 		echo $HA is a regular file
 	fi
 else
-	echo $HA does not exist
+	echo $HA file does not exist
 fi
