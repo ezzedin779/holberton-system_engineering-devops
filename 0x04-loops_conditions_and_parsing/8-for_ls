@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#display just the name of the files
+LS=$(ls .)
+for i in $LS
+do
+	echo "$i" | cut -d- -f2
+done
