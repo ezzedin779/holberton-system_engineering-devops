@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# localhost resolbes to 127.0.0.2 facebook.com resolves to 8.8.8.8
+ifconfig localhost 127.0.0.2
+ifconfig facebook.com 8.8.8.8
