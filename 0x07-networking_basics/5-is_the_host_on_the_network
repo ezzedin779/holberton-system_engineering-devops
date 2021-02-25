@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# tell me host name :') 
+if [ "$1" ]
+then
+	ping -c 5 "$1"
+else
+	echo "Usage: 5-is_the_host_on_network {IP_ADRESS}"
+fi
