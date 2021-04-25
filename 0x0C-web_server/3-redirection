@@ -12,7 +12,7 @@ sudo printf %s "server {
 		index index.html index.htm;
 
 		location /redirect_me {
-			return 301 https://docs.nginx.com/
+			return 301 http://cuberule.com/
 		}
 	}" > /etc/nginx/sites-available/default
 sudo service nginx restart
