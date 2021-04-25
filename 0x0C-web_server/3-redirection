@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Redirect new server
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo mkdir /etc/nginx/html
+sudo touch /etc/nginx/html/index.html
+sudo echo "Holberton School" > /etc/nginx/html/index.html
+sudo printf %s "server {
+		listen 80 default_server;
+		listen [::]:80 default_server;
+		root /etc/nginx/html;
+		index index.html index.htm;
+
+		location /redirect_me {
+			return 301 https://docs.nginx.com/
+		}
+	}" > /etc/nginx/sites-available/default
+sudo service nginx restart
