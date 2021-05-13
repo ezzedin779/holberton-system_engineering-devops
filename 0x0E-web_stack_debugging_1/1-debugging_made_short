@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# configuered to respond to port 80 shortcut
+cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled
+service nginx restart
