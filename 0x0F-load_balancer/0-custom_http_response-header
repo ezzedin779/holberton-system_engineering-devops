@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # configurirng my HTTP Header of the 2 servers
 
 sudo apt-get update
