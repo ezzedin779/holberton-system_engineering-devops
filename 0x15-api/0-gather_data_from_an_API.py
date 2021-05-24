@@ -24,7 +24,7 @@ if __name__ == "__main__":
                         if key == 'completed' and value is True:
                             completed += 1
                             tasks.append(i['title'])
-        print('Employee {} is done with tasks \
+        print('Employee {} is done with tasks\
 ({}/{}):'.format(us, completed, count))
         for i in tasks:
             print('\t {}'.format(i))
