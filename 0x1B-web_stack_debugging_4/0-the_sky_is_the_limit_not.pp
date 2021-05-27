@@ -1,0 +1,5 @@
+#debugging
+exec {'fix-restart':
+path    => ['/usr/bin', '/bin'],
+command => "sed -i 's/-n 15/-n 5000/g' /etc/default/nginx; sudo ervice nginx restart",
+}
